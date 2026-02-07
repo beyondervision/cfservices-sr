@@ -1,5 +1,13 @@
 {
-  "framework": null,
-  "installCommand": "npm install",
-  "buildCommand": "npm run build"
+  "version": 2,
+  "builds": [
+    { "src": "server.js", "use": "@vercel/node" },
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "profiel/**", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/google/gemini", "dest": "/server.js" },
+    { "src": "/profiel/(.*)", "dest": "/profiel/$1" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
 }
