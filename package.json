@@ -1,23 +1,13 @@
 {
   "name": "cfservices-sr",
   "version": "1.0.0",
-  "description": "CFServices Zorg SR – Z.A.L Hub",
   "main": "server.js",
-  "packageManager": "npm@10.x",
-
   "scripts": {
-    "dev": "node server.js",
-    "start": "node server.js",
-    "build": "echo \"static site - no build needed\"",
-    "test": "echo \"No tests configured\""
+    "start": "node server.js"
   },
-
-  "keywords": ["cfservices", "zorg", "zal", "felbra", "fr"],
-  "author": "CFServices",
-  "license": "ISC",
-
   "dependencies": {
-    "cors": "^2.8.6",
-    "express": "^5.2.1"
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2"
   }
 }
