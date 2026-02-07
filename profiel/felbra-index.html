@@ -2,7 +2,7 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
-  <title>Felbra Rozenblad · Groei-Samen Dossier fr1.2</title>
+  <title>AiCelium · fr1.2 Felbra Rozenblad</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     :root { --gold: #c5a059; --bg: #0e0e11; --card: #16161c; --text: #eaeaf0; }
@@ -26,31 +26,30 @@
 <body>
 
 <div style="background: #111; padding: 0.5rem; text-align: center; font-size: 0.7rem; color: var(--gold); letter-spacing: 2px; border-bottom: 1px solid #222;">
-  CFSERVICES · ZORGVELD CANONIEK · MODULE FR1.2
+  AICELIUM · VELDKNOOPPUNT · FR1.2
 </div>
 
 <nav class="nav-bar">
-  <a href="/index.html" class="btn-return"><span>←</span> Terug naar Hoofdmenu</a>
+  <a href="/index.html" class="btn-return"><span>←</span> Terug naar AiCelium</a>
 </nav>
 
 <header class="ecosysteem-header">
-  <div class="status-badge">Groeisamen · Adaptief Dossier fr1.2</div>
+  <div class="status-badge">AiCelium · fr1.2 · Veldknooppunt</div>
   <h1>Felbra Rozenblad</h1>
-  <p>Dossier ID: fr · Partner Agent · Zorgmanagement · Suriname ↔ Nederland</p>
+  <p>Partner Agent · Zorgmanagement · Suriname ↔ Nederland</p>
 </header>
 
 <div class="grid-container">
   <aside>
     <section class="info-card">
-      <h2>Dossier Gegevens</h2>
-      <p><strong>Identiteit:</strong> Felbra Rozenblad</p>
-      <p><strong>Sectie:</strong> Zorgmanagement / Diaspora</p>
+      <h2>Veldgegevens</h2>
+      <p><strong>Naam:</strong> Felbra Rozenblad</p>
       <p><strong>Rol:</strong> Partner Agent (Veldbegeleiding)</p>
-      <p><strong>Focus:</strong> Zorg, Stabiliteit & Juridische borging</p>
+      <p><strong>Focus:</strong> Stabiliteit · Zorgcoördinatie · Juridische borging</p>
     </section>
 
     <section class="info-card">
-      <h2>Sociale Connectiviteit</h2>
+      <h2>Connectiviteit</h2>
       <div class="social-links">
         <a href="mailto:felbra.rozenblad@cfservices.sr">E-mail: felbra.rozenblad@cfservices.sr</a>
         <a href="mailto:info@cfservices.sr">E-mail: info@cfservices.sr</a>
@@ -62,11 +61,11 @@
   </aside>
 
   <main class="zal-engine">
-    <h2>Z.A.L. Resonantie Engine</h2>
-    <div id="output" class="output-area">Systeem gereed voor 1% fysieke input...</div>
+    <h2>AiCelium · Resonantie Engine</h2>
+    <div id="output" class="output-area">Veld gereed voor 1% fysieke input...</div>
     <input type="text" id="prompt" class="input-field" placeholder="Typ hier uw vraag..." onkeypress="askBeyonder(event)">
     <div class="disclaimer-box">
-      <strong>JURIDISCH KADER:</strong> De Z.A.L. Engine biedt uitsluitend informatieve ondersteuning. Persoonlijke zorgplannen verlopen via direct contact met de Partner Agent.
+      <strong>KADER:</strong> AiCelium biedt informatieve resonantie. Persoonlijke zorgtrajecten verlopen via directe menselijke overdracht.
     </div>
   </main>
 </div>
@@ -77,29 +76,29 @@
       const p = document.getElementById('prompt');
       const o = document.getElementById('output');
       const input = p.value.toLowerCase();
-      const footerNote = "<br><br><small style='opacity:0.7;'><i>Z.A.L: Ik bied oriëntatie. Voor persoonlijke begeleiding: <strong>felbra.rozenblad@cfservices.sr</strong>.</i></small>";
-      o.innerHTML = "<em>Resoneren met fr1.2...</em>";
+      const footerNote = "<br><br><small style='opacity:0.7;'><i>AiCelium: Voor persoonlijke begeleiding: <strong>felbra.rozenblad@cfservices.sr</strong>.</i></small>";
+      o.innerHTML = "<em>Resonantie actief...</em>";
       p.value = "";
 
-      const crisisWoorden = ["nood","pijn","acuut","spoed","dringend","onwel","bewusteloos","112","ziekenhuis","bloed","gevaar","val"];
-      if (crisisWoorden.some(w => input.includes(w))) {
+      const crisis = ["nood","pijn","acuut","spoed","dringend","onwel","bewusteloos","112","ziekenhuis","bloed","gevaar","val"];
+      if (crisis.some(w => input.includes(w))) {
         o.innerHTML =
-          "<span style='color:#ff4a4a;'><strong>CRISIS-PROTOCOL GEACTIVEERD:</strong></span><br>" +
-          "Neem bij levensbedreigende situaties direct contact op met de lokale noodnummers (zoals 112).<br>" +
-          "Voor dringende zorgtrajecten binnen CFServices kunt u mailen naar <strong>zorg@cfservices.sr</strong>." +
+          "<span style='color:#ff4a4a;'><strong>CRISIS-LAAG ACTIEF:</strong></span><br>" +
+          "Neem bij nood direct contact op met lokale hulpdiensten (zoals 112).<br>" +
+          "Voor urgente zorg binnen CFServices: <strong>zorg@cfservices.sr</strong>." +
           footerNote;
         return;
       }
 
-      const locatieTriggers = ["waar","locatie","adres","vinden","plaats"];
-      if (locatieTriggers.some(t => input.includes(t))) {
+      const locatie = ["waar","locatie","adres","vinden","plaats"];
+      if (locatie.some(t => input.includes(t))) {
         o.innerHTML =
-          "<strong>LOCATIE & BEREIKBAARHEID:</strong><br>" +
-          "CFServices opereert internationaal met drie pijlers:<br>" +
-          "• Suriname (Paramaribo en regio’s)<br>" +
-          "• De diaspora-verbinding met Nederland<br>" +
-          "• Online zorgoriëntatie via Z.A.L<br><br>" +
-          "Voor afspraken mailt u naar <strong>felbra.rozenblad@cfservices.sr</strong>." +
+          "<strong>LOCATIE-INFORMATIE:</strong><br>" +
+          "AiCelium werkt binnen de triade:<br>" +
+          "• Suriname (Paramaribo)<br>" +
+          "• Diaspora (Nederland)<br>" +
+          "• Online veldoriëntatie<br><br>" +
+          "Contact: <strong>felbra.rozenblad@cfservices.sr</strong>" +
           footerNote;
         return;
       }
@@ -112,17 +111,17 @@
         const res = await fetch(ENDPOINT, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ prompt: `Dossier fr - Felbra Rozenblad. Assisteer kort bij: ${input}` })
+          body: JSON.stringify({ prompt: `AiCelium · fr1.2 Felbra Rozenblad · Vraag: ${input}` })
         });
 
         const data = await res.json();
         o.innerHTML = data.ok
           ? data.text + footerNote
-          : "Vraag ontvangen. Voor details mail naar Felbra." + footerNote;
+          : "Vraag ontvangen. Menselijke overdracht aanbevolen." + footerNote;
 
       } catch (err) {
         o.innerHTML =
-          "Algemene zorginformatie is beschikbaar. Voor diepgang is persoonlijk contact vereist." +
+          "AiCelium is bereikbaar. Voor diepgang is menselijke overdracht vereist." +
           footerNote;
       }
     }
@@ -131,7 +130,7 @@
 
 <footer>
   <p style="text-align: center; padding: 2rem; opacity: 0.5; font-size: 0.8rem;">
-    © 2026 CFServices · Groei-Samen Project · Release fr1.2 · Salute Clifton
+    © 2026 AiCelium · CFServices · Veldarchitectuur · Salute Clifton
   </p>
 </footer>
 
