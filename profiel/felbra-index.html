@@ -30,7 +30,6 @@
 </div>
 
 <nav class="nav-bar">
-  <!-- RETURN FIXED -->
   <a href="/index.html" class="btn-return"><span>←</span> Terug naar Hoofdmenu</a>
 </nav>
 
@@ -82,7 +81,6 @@
       o.innerHTML = "<em>Resoneren met fr1.2...</em>";
       p.value = "";
 
-      // [1] Crisis-filter
       const crisisWoorden = ["nood","pijn","acuut","spoed","dringend","onwel","bewusteloos","112","ziekenhuis","bloed","gevaar","val"];
       if (crisisWoorden.some(w => input.includes(w))) {
         o.innerHTML =
@@ -93,7 +91,6 @@
         return;
       }
 
-      // [2] Locatie-intent
       const locatieTriggers = ["waar","locatie","adres","vinden","plaats"];
       if (locatieTriggers.some(t => input.includes(t))) {
         o.innerHTML =
@@ -107,7 +104,6 @@
         return;
       }
 
-      // [3] Online resonantie
       try {
         const ENDPOINT = location.hostname === "localhost"
           ? "http://localhost:4100/google/gemini"
