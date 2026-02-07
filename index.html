@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Felbra Rozenblad · Groei-Samen Dossier fr1.2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root { 
+      --gold: #c5a059; 
+      --bg: #0e0e11; 
+      --card: #16161c; 
+      --text: #eaeaf0; 
+    }
+    
+    body { 
+      margin: 0; 
+      background: var(--bg); 
+      color: var(--text); 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+      line-height: 1.6;
+    }
+    
+    .nav-bar {
+      background: #0d1117;
+      padding: 0.75rem 1.5rem;
+      border-bottom: 1px solid #222;
+      display: flex;
+      align-items: center;
+    }
+
+    .btn-return {
+      color: var(--gold);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: opacity 0.2s;
+    }
+
+    .btn-return:hover { opacity: 0.8; }
+
+    .ecosysteem-header { 
+      background: linear-gradient(135deg, #111, #1a1a24); 
+      padding: 3rem 1.5rem; 
+      text-align: center; 
+      border-bottom: 2px solid var(--gold);
+    }
+
+    .status-badge { 
+      display: inline-block; 
+      padding: 0.25rem 1rem; 
+      border: 1px solid var(--gold); 
+      color: var(--gold); 
+      border-radius: 20px; 
+      font-size: 0.75rem; 
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .grid-container { 
+      display: grid; 
+      grid-template-columns: 1fr 2fr; 
+      gap: 2rem; 
+      padding: 2rem; 
+      max-width: 1200px; 
+      margin: auto; 
+    }
+
+    .info-card { 
+      background: var(--card); 
+      padding: 1.5rem; 
+      border-radius: 8px; 
+      border: 1px solid #222; 
+      margin-bottom: 2rem; 
+    }
+
+    .zal-engine { 
+      background: #0d1117; 
+      border: 1px solid var(--gold); 
+      padding: 2rem; 
+      border-radius: 8px; 
+      box-shadow: 0 4px 25px rgba(0,0,0,0.6);
+    }
+
+    .social-links { 
+      display: flex; 
+      flex-direction: column; 
+      gap: 0.75rem; 
+      margin-top: 1rem; 
+    }
+    
+    .social-links a { 
+      color: var(--text); 
+      text-decoration: none; 
+      font-size: 0.9rem; 
+      padding: 0.6rem; 
+      background: #25252e; 
+      border-radius: 4px; 
+      transition: all 0.3s; 
+      border-left: 3px solid var(--gold);
+    }
+    
+    .social-links a:hover { 
+      background: #32323d; 
+      color: var(--gold); 
+      padding-left: 1rem;
+    }
+
+    .input-field { 
+      width: 100%; 
+      padding: 0.8rem; 
+      background: #1c1c24; 
+      border: 1px solid #333; 
+      color: white; 
+      border-radius: 4px; 
+      margin-top: 1rem;
+      box-sizing: border-box;
+    }
+
+    .output-area { 
+      margin-top: 1.5rem; 
+      min-height: 80px;
+      padding: 1rem;
+      background: rgba(255,255,255,0.03);
+      border-radius: 4px;
+    }
+
+    .disclaimer-box {
+      font-size: 0.75rem;
+      opacity: 0.6;
+      margin-top: 1.5rem;
+      border-top: 1px solid #333;
+      padding-top: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .grid-container { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div style="background: #111; padding: 0.5rem; text-align: center; font-size: 0.7rem; color: var(--gold); letter-spacing: 2px; border-bottom: 1px solid #222;">
+  CFSERVICES · ZORGVELD CANONIEK · MODULE FR1.2
+</div>
+
+<nav class="nav-bar">
+  <a href="/" class="btn-return">
+    <span>←</span> Terug naar Hoofdmenu
+  </a>
+</nav>
+
+<header class="ecosysteem-header">
+  <div class="status-badge">Groeisamen · Adaptief Dossier fr1.2</div>
+  <h1>Felbra Rozenblad</h1>
+  <p>Dossier ID: fr · Partner Agent · Zorgmanagement</p>
+</header>
+
+<div class="grid-container">
+  <aside>
+    <section class="info-card">
+      <h2>Dossier Gegevens</h2>
+      <p><strong>Identiteit:</strong> Felbra Rozenblad</p>
+      <p><strong>Sectie:</strong> Zorgmanagement / Diaspora</p>
+      <p><strong>Rol:</strong> Partner Agent (Veldbegeleiding)</p>
+      <p><strong>Focus:</strong> Zorg, Stabiliteit & Juridische borging</p>
+      <hr style="border-color: #333;">
+      <p><small>Dit dossier faciliteert de overgang van digitale resonantie naar fysieke zorgbegeleiding binnen het Groei-Samen ecosysteem.</small></p>
+    </section>
+
+    <section class="info-card">
+      <h2>Sociale Connectiviteit</h2>
+      <div class="social-links">
+        <a href="mailto:felbra@cfservices.sr">E-mail: felbra@cfservices.sr</a>
+        <a href="https://wa.me/597XXXXXXXX" target="_blank">WhatsApp: +597 XXXX-XXXX</a>
+        <a href="https://linkedin.com/in/felbra-rozenblad" target="_blank">LinkedIn · Professioneel</a>
+        <a href="https://facebook.com/cfservices.sr" target="_blank">Facebook · Community</a>
+      </div>
+    </section>
+  </aside>
+
+  <main class="zal-engine">
+    <h2>Z.A.L. Resonantie Engine</h2>
+    <p>Stel uw algemene vraag over zorgbegeleiding en stabiliteit aan de assistent van Felbra.</p>
+    
+    <div id="output" class="output-area">Systeem gereed voor 1% fysieke input...</div>
+    
+    <input type="text" id="prompt" class="input-field" placeholder="Typ hier uw vraag..." onkeypress="askBeyonder(event)">
+    
+    <div class="disclaimer-box">
+      <strong>JURIDISCH KADER:</strong> De Z.A.L. Engine biedt uitsluitend informatieve ondersteuning. 
+      Persoonlijke zorgplannen en medische validatie verlopen via direct contact met de Partner Agent.
+    </div>
+  </main>
+</div>
+
+<script>
+  async function askBeyonder(e) {
+    if (e.key === 'Enter') {
+      const p = document.getElementById('prompt');
+      const o = document.getElementById('output');
+      const input = p.value.toLowerCase();
+      
+      const footerNote = "<br><br><small style='opacity:0.7;'><i>Z.A.L. (informatieve modus): Ik bied algemene oriëntatie. Voor persoonlijke begeleiding staat Felbra klaar via <strong>felbra@cfservices.sr</strong>.</i></small>";
+      
+      o.innerHTML = "<em>Resoneren met fr1.2...</em>";
+      p.value = "";
+
+      // Crisis Filter
+      const crisisWoorden = ["nood", "pijn", "acuut", "spoed", "dringend", "onwel", "bewusteloos", "112", "ziekenhuis", "bloed"];
+      if (crisisWoorden.some(w => input.includes(w))) {
+        o.innerHTML = "<span style='color: #ff4a4a;'><strong>CRISIS-PROTOCOL GEACTIVEERD:</strong></span><br>Neem bij levensbedreigende situaties direct contact op met de lokale noodnummers (zoals 112). Voor dringende zorg-trajecten binnen CFServices mailt u naar <strong>zorg@cfservices.sr</strong>." + footerNote;
+        return;
+      }
+
+      // Mens-overdracht
+      const persoonlijkeTriggers = [
+        "mijn", "ik heb", "ik voel", "ik ervaar", "moeder", "vader", "kind", "partner", "oma", "opa",
+        "afspraak", "dossier", "kosten", "betalen", "behandeling", "ziek", "medicijn", "hulp nodig"
+      ];
+      const isPersoonlijk = persoonlijkeTriggers.some(t => input.includes(t));
+
+      if (isPersoonlijk) {
+        o.innerHTML = "<strong>MENS-OVERDRACHT NODIG:</strong><br>Uw vraag bevat persoonlijke of zorg-specifieke elementen. In het kader van privacy en zorgkwaliteit wordt dit niet door de AI afgehandeld.<br><br>" +
+                      "<strong>Actie:</strong> Stuur uw verzoek naar <strong>felbra@cfservices.sr</strong> voor een beveiligde dialoog met de Partner Agent." + footerNote;
+        return;
+      }
+
+      // Locatie-intent
+      const locatieTriggers = ["waar", "locatie", "adres", "vinden", "plaats"];
+      if (locatieTriggers.some(t => input.includes(t))) {
+        o.innerHTML = "<strong>LOCATIE & BEREIKBAARHEID:</strong><br>" +
+                      "CFServices opereert als een adaptief netwerk in Suriname en Nederland. " + 
+                      "Felbra Rozenblad is actief binnen de regio Paramaribo en de diaspora-connectie.<br><br>" +
+                      "Voor een specifiek spreekuur of huisbezoek kunt u contact opnemen via <strong>felbra@cfservices.sr</strong>." + footerNote;
+        return;
+      }
+
+      // Algemene resonantie
+      try {
+        const ENDPOINT =
+          location.hostname === "localhost"
+            ? "http://localhost:4100/google/gemini"
+            : "/google/gemini";
+
+        const res = await fetch(ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ prompt: `Dossier fr - Felbra Rozenblad. Assisteer kort bij deze algemene zorgvraag: ${input}` })
+        });
+
+        const data = await res.json();
+        o.innerHTML = data.ok
+          ? data.text + footerNote
+          : "Ik heb uw vraag ontvangen. Voor een specifiek antwoord binnen de Groei-Samen structuur verwijs ik u naar Felbra." + footerNote;
+
+      } catch (err) {
+        o.innerHTML = "Ik kan u momenteel informeren over onze algemene werkwijze in Suriname en Nederland. Voor diepgang en trajecten is persoonlijk contact vereist." + footerNote;
+      }
+    }
+  }
+</script>
+
+<footer>
+  <p style="text-align: center; padding: 2rem; opacity: 0.5; font-size: 0.8rem;">
+    © 2026 CFServices · Groei-Samen Project · Release fr1.2 · Salute Clifton
+  </p>
+</footer>
+
+</body>
+</html>
