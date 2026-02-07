@@ -1,10 +1,11 @@
 const express = require("express");
 const cors = require("cors");
+const bodyParser = require("body-parser");
 
 const app = express();
 
 app.use(cors());
-app.use(express.json());
+app.use(bodyParser.json());
 
 // --- Z.A.L HUB ROUTE ---
 app.post("/google/gemini", (req, res) => {
@@ -17,11 +18,10 @@ app.post("/google/gemini", (req, res) => {
   });
 });
 
+// Root check
 app.get("/", (req, res) => {
-  res.send("ZAL HUB ACTIEF");
+  res.send("ZAL HUB ACTIEF (Vercel Serverless)");
 });
 
-const PORT = 4100;
-app.listen(PORT, () => {
-  console.log(`🟢 Z.A.L Hub actief op http://localhost:${PORT}`);
-});
+// --- BELANGRIJK: GEEN app.listen() IN VERCEL ---
+module.exports = app;
